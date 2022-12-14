@@ -33,9 +33,80 @@
   z-index: 1;
 }
 
+.project-name {
+  font-family: "AvenirHeavy", sans-serif;
+  z-index: -1;
+  font-size: 70px;
+}
+@media screen and (min-width: 1024px) {
+  .project-name {
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .project-name {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .project-name {
+    font-size: 120px;
+  }
+}
+
+.project-description,
+.my-role,
+.project-id,
+.project-type,
+.project-link {
+  font-size: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .project-description,
+.my-role,
+.project-id,
+.project-type,
+.project-link {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .project-description,
+.my-role,
+.project-id,
+.project-type,
+.project-link {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .project-description,
+.my-role,
+.project-id,
+.project-type,
+.project-link {
+    font-size: 58px;
+  }
+}
+
+.project-description {
+  padding-top: 2%;
+  font-family: "AvenirBook", sans-serif;
+  flex-grow: 1;
+}
+
+.my-role {
+  padding-top: 5%;
+  font-family: "AvenirMedium", sans-serif;
+}
+
 .project-id {
   font-family: "AvenirHeavy", sans-serif;
-  font-size: 30px;
+  padding: 5%;
+}
+
+.project-type {
+  font-family: "AvenirHeavy", sans-serif;
   padding: 5%;
 }
 
@@ -43,7 +114,6 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding-top: 5%;
   height: 100%;
 }
 
@@ -53,24 +123,6 @@
   width: 100%;
   height: 100%;
   padding: 5% 5% 5% 10%;
-}
-
-.project-name {
-  font-family: "AvenirHeavy", sans-serif;
-  font-size: 80px;
-}
-
-.my-role {
-  padding-top: 5%;
-  font-family: "AvenirMedium", sans-serif;
-  font-size: 30px;
-}
-
-.project-description {
-  padding-top: 2%;
-  font-family: "AvenirBook", sans-serif;
-  font-size: 30px;
-  flex-grow: 1;
 }
 
 .project-links {
@@ -83,7 +135,6 @@
   height: 100%;
   padding: 0 25px;
   font-family: "AvenirBook", sans-serif;
-  font-size: 30px;
   border: 3px solid transparent;
   cursor: pointer;
   transform: translate(0px, 0);
@@ -93,12 +144,6 @@
   transform: translate(0px, -5px) scale(1.05);
   box-shadow: 0 5px 5px #ccc;
   border-color: black;
-}
-
-.project-type {
-  font-family: "AvenirHeavy", sans-serif;
-  font-size: 30px;
-  padding: 5%;
 }
 
 .block-text-reveal {

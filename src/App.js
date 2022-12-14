@@ -1,8 +1,13 @@
 import "./styles/App.scss";
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./pages/Home";
 
 function App() {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
   return (
     <div className="App">
       <Home />

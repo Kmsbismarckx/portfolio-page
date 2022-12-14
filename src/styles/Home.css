@@ -36,11 +36,49 @@
 }
 .introduction__name {
   font-family: "Valencia", serif;
-  font-size: 150px;
+}
+@media screen and (min-width: 768px) {
+  .introduction__name {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduction__name {
+    font-size: 140px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .introduction__name {
+    font-size: 150px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .introduction__name {
+    font-size: 200px;
+  }
 }
 .introduction__info {
   font-family: "Avenir", "Helvetica", "Ariel", sans-serif;
-  font-size: 50px;
+}
+@media screen and (min-width: 768px) {
+  .introduction__info {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduction__info {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .introduction__info {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .introduction__info {
+    font-size: 60px;
+  }
 }
 .introduction__item {
   position: relative;
@@ -78,7 +116,6 @@
   transition: transform 0.7s ease-out;
   font-family: "AvenirHeavy", sans-serif;
   position: absolute;
-  font-size: 350px;
   color: #eee;
   top: 5%;
   width: 100%;
@@ -86,6 +123,28 @@
   left: -100%;
   white-space: nowrap;
   z-index: -1;
+  font-size: 180px;
+}
+@media screen and (min-width: 1024px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 180px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 200px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 350px;
+  }
 }
 
 .skills {
@@ -94,18 +153,55 @@
   overflow: hidden;
 }
 
+.about__description,
+.skills__description {
+  font-size: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .about__description,
+.skills__description {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__description,
+.skills__description {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .about__description,
+.skills__description {
+    font-size: 70px;
+  }
+}
+
 .skills__description {
   display: grid;
   padding-top: 10%;
   grid-template-columns: repeat(2, auto);
   font-weight: 300;
-  font-size: 70px;
   min-height: 100vh;
 }
 .skills__description .skills__item {
   font-family: AvenirRoman, sans-serif;
-  font-size: 35px;
   justify-self: center;
+  font-size: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .skills__description .skills__item {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .skills__description .skills__item {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .skills__description .skills__item {
+    font-size: 70px;
+  }
 }
 
 .contacts {
