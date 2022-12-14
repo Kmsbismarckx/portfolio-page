@@ -1,0 +1,128 @@
+@import "../../styles/variables";
+
+.text-container {
+  //display: flex;
+  //flex-flow: column nowrap;
+  //height: 100%;
+  //width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 50%;
+  z-index: 1;
+}
+.project-id {
+  font-family: "AvenirHeavy", sans-serif;
+  font-size: 30px;
+  padding: 5%;
+}
+.project-details-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 5%;
+  height: 100%;
+}
+.project-details {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  padding: 5% 5% 5% 10%;
+}
+.project-name {
+  font-family: "AvenirHeavy", sans-serif;
+  font-size: 80px;
+}
+.my-role {
+  padding-top: 5%;
+  font-family: "AvenirMedium", sans-serif;
+  font-size: 30px;
+}
+.project-description {
+  padding-top: 2%;
+  font-family: "AvenirBook", sans-serif;
+  font-size: 30px;
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  .project-link {
+    display: inline-block;
+    height: 100%;
+    padding: 0 25px;
+    font-family: "AvenirBook", sans-serif;
+    font-size: 30px;
+
+    border: 3px solid transparent;
+    cursor: pointer;
+    transform: translate(0px, 0);
+    transition: all 0.1s ease-out;
+  }
+  .project-link:hover {
+    transform: translate(0px, -5px) scale(1.05);
+    box-shadow: 0 5px 5px #ccc;
+    border-color: black;
+  }
+}
+
+.project-type {
+  font-family: "AvenirHeavy", sans-serif;
+  font-size: 30px;
+  padding: 5%;
+}
+
+.block-text-reveal {
+  color: transparent;
+  animation: appearText 100ms linear forwards;
+  pointer-events: none;
+}
+
+.block-text-reveal_appear {
+  animation: appearText 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 0.5s;
+  position: relative;
+  pointer-events: all;
+}
+.block-text-reveal_appear::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: #222;
+  animation: revBlock 1s cubic-bezier(0.19, 1, 0.22, 1);
+  animation-delay: 0s;
+  box-sizing: content-box;
+}
+
+@keyframes appearText {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes revBlock {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
