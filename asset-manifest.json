@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.f7d0ae5e.css",
+    "main.css": "/portfolio-page/static/css/main.6d26087d.css",
     "main.js": "/portfolio-page/static/js/main.fa8443ff.js",
     "static/media/Avenir-Book-01.ttf": "/portfolio-page/static/media/Avenir-Book-01.ab7aa26986df653dedc1.ttf",
     "static/media/Avenir-Medium-09.ttf": "/portfolio-page/static/media/Avenir-Medium-09.90ba4d31a83ca40b27d8.ttf",
@@ -9,11 +9,11 @@
     "static/media/Avenir-Light-07.ttf": "/portfolio-page/static/media/Avenir-Light-07.d7d158a298aa946d69ad.ttf",
     "static/media/Valencia.ttf": "/portfolio-page/static/media/Valencia.982aa30178d00befd6f0.ttf",
     "index.html": "/portfolio-page/index.html",
-    "main.f7d0ae5e.css.map": "/portfolio-page/static/css/main.f7d0ae5e.css.map",
+    "main.6d26087d.css.map": "/portfolio-page/static/css/main.6d26087d.css.map",
     "main.fa8443ff.js.map": "/portfolio-page/static/js/main.fa8443ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7d0ae5e.css",
+    "static/css/main.6d26087d.css",
     "static/js/main.fa8443ff.js"
   ]
 }
