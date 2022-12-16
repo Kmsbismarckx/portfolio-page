@@ -26,97 +26,12 @@
   height: 100%;
 }
 
-.introduction {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
-.introduction__name {
-  font-family: "Valencia", serif;
-}
-@media screen and (min-width: 768px) {
-  .introduction__name {
-    font-size: 100px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .introduction__name {
-    font-size: 140px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .introduction__name {
-    font-size: 150px;
-  }
-}
-@media screen and (min-width: 2560px) {
-  .introduction__name {
-    font-size: 200px;
-  }
-}
-.introduction__info {
-  font-family: "Avenir", "Helvetica", "Ariel", sans-serif;
-}
-@media screen and (min-width: 768px) {
-  .introduction__info {
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .introduction__info {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .introduction__info {
-    font-size: 50px;
-  }
-}
-@media screen and (min-width: 2560px) {
-  .introduction__info {
-    font-size: 60px;
-  }
-}
-.introduction__item {
-  position: relative;
-  z-index: 1;
-}
-
-.hide {
-  background-color: white;
-  overflow-y: clip;
-}
-.hide span {
-  display: inline-block;
-  transform: translateY(100%);
-}
-
-.about {
-  height: 50vh;
-  width: 100%;
-  padding-top: 5%;
-  position: relative;
-  overflow: hidden;
-}
-.about__description {
-  align-items: center;
-  text-align: left;
-  margin-left: 30%;
-  margin-right: 5%;
-  font-weight: 300;
-  font-size: 70px;
-}
-
 .about__title,
 .skills__title,
 .contacts__title {
   transition: transform 0.7s ease-out;
   font-family: "AvenirHeavy", sans-serif;
   position: absolute;
-  color: #eee;
   top: 5%;
   width: 100%;
   text-align: center;
@@ -124,12 +39,42 @@
   white-space: nowrap;
   z-index: -1;
   font-size: 180px;
+  will-change: transform;
+}
+@media screen and (min-width: 320px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__title,
+.skills__title,
+.contacts__title {
+    font-size: 90px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .about__title,
 .skills__title,
 .contacts__title {
     font-size: 180px;
+    color: #eee;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -147,6 +92,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .skills__title,
+.contacts__title {
+    position: initial;
+  }
+}
+
 .skills {
   position: relative;
   padding-top: 15%;
@@ -155,7 +107,35 @@
 
 .about__description,
 .skills__description {
-  font-size: 30px;
+  font-family: "AvenirLight", sans-serif;
+}
+@media screen and (min-width: 320px) {
+  .about__description,
+.skills__description {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .about__description,
+.skills__description {
+    padding: 30px;
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .about__description,
+.skills__description {
+    padding: 30px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__description,
+.skills__description {
+    padding: 80px;
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .about__description,
@@ -174,61 +154,6 @@
 .skills__description {
     font-size: 70px;
   }
-}
-
-.skills__description {
-  display: grid;
-  padding-top: 10%;
-  grid-template-columns: repeat(2, auto);
-  font-weight: 300;
-  min-height: 100vh;
-}
-.skills__description .skills__item {
-  font-family: AvenirRoman, sans-serif;
-  justify-self: center;
-  font-size: 35px;
-}
-@media screen and (min-width: 1024px) {
-  .skills__description .skills__item {
-    font-size: 35px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .skills__description .skills__item {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 2560px) {
-  .skills__description .skills__item {
-    font-size: 70px;
-  }
-}
-
-.contacts {
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-}
-
-.contacts__title {
-  left: 0;
-  right: 100%;
-}
-
-.contacts__description {
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  padding-top: 20%;
-}
-
-.contacts__link {
-  width: 256px;
-  height: 256px;
-}
-.contacts__link img {
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=Home.css.map */

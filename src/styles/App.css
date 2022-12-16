@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "AvenirLight";
+  src: url("../fonts/Avenir/Avenir-Light-07.ttf");
+}
+@font-face {
+  font-family: "AvenirRoman";
+  src: url("../fonts/Avenir/Avenir-Roman-12.ttf");
+}
+@font-face {
+  font-family: "AvenirBook";
+  src: url("../fonts/Avenir/Avenir-Book-01.ttf");
+}
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/Avenir/Avenir-Medium-09.ttf");
+}
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("../fonts/Avenir/Avenir-Heavy-05.ttf");
+}
+@font-face {
+  font-family: "Valencia";
+  src: url("../fonts/Valencia/Valencia.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,12 +35,16 @@ a {
 }
 
 .swiper.swiper-project {
-  width: 50%;
   height: 100%;
   padding-top: 5%;
 }
 .swiper.swiper-project .swiper-project__slide {
   padding: 0 5% 5%;
+}
+@media screen and (max-width: 768px) {
+  .swiper.swiper-project .swiper-project__slide {
+    padding-bottom: 10%;
+  }
 }
 .swiper.swiper-project .swiper-pagination-bullet-active {
   background-color: black;
@@ -28,13 +56,9 @@ a {
 
 ::-webkit-scrollbar-track {
   background-color: #ebebeb;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
   background: #6d6d6d;
 }
 

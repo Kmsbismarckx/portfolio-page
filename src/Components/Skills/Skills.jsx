@@ -1,9 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
+import "./Skills.scss";
 import scrollXHandler from "../../helpers/scrollXHandler";
+import useScrollTitle from "../hooks/useScrollTitle";
 
 function Skills() {
   const [scrollPercent, setScrollPercent] = useState(0);
+  const [scrollStyle, setScrollStyle] = useState({
+    transform: `translate(${scrollPercent}%)`,
+  });
   const skillsRef = useRef(null);
+
+  useScrollTitle(scrollStyle, setScrollStyle, scrollPercent);
 
   useEffect(() => {
     window.addEventListener("scroll", (event) =>
@@ -16,10 +23,7 @@ function Skills() {
   }, [scrollPercent]);
   return (
     <div className="skills" ref={skillsRef}>
-      <div
-        className="skills__title"
-        style={{ transform: `translate(${scrollPercent}%)` }}
-      >
+      <div className="skills__title" style={scrollStyle}>
         SKILLS
       </div>
       <div className="skills__description">

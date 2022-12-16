@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.contacts {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  @media screen and (max-width: $tablet) {
+    min-height: 50vh;
+  }
+  &__title {
+    left: 0;
+    right: 100%;
+    @media screen and (max-width: $tablet) {
+      left: 0;
+      right: 0;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 20%;
+  }
+  &__link {
+    @media screen and (min-width: $mobileS) {
+      width: 100px;
+      height: 100px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 200px;
+      height: 200px;
+    }
+    @media screen and (min-width: $laptop) {
+      width: 256px;
+      height: 256px;
+    }
+    @media screen and (min-width: $laptopL) {
+      width: 256px;
+      height: 256px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 256px;
+      height: 256px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -34,6 +34,12 @@
   margin-bottom: 200px;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .projects__item {
+    flex-flow: column nowrap;
+    height: 100%;
+  }
+}
 .projects__item .projects__item-img-wrapper {
   width: 100%;
   height: 100%;
@@ -44,9 +50,19 @@
 }
 .projects__item-img {
   width: 100%;
+  will-change: auto;
 }
 .projects .swiper-project {
+  width: 50%;
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .projects .swiper-project {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+    padding-top: 300px;
+  }
 }
 .projects .mandatory-scroll-snapping {
   scroll-snap-align: end;

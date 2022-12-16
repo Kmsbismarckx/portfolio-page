@@ -32,11 +32,36 @@
   width: 50%;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .text-container {
+    width: 100%;
+  }
+}
 
 .project-name {
   font-family: "AvenirHeavy", sans-serif;
   z-index: -1;
   font-size: 70px;
+}
+@media screen and (min-width: 320px) {
+  .project-name {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .project-name {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .project-name {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-name {
+    font-size: 60px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .project-name {
@@ -135,10 +160,9 @@
   height: 100%;
   padding: 0 25px;
   font-family: "AvenirBook", sans-serif;
+  transition: transform 0.15s ease-out;
   border: 3px solid transparent;
   cursor: pointer;
-  transform: translate(0px, 0);
-  transition: all 0.1s ease-out;
 }
 .project-links .project-link:hover {
   transform: translate(0px, -5px) scale(1.05);
@@ -168,6 +192,7 @@
   height: 100%;
   background: #222;
   animation: revBlock 1s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: left;
   animation-delay: 0s;
   box-sizing: content-box;
 }

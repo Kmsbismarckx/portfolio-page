@@ -1,9 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
+import { isMobile } from "react-device-detect";
 import scrollXHandler from "../../helpers/scrollXHandler";
+import "./Contacts.scss";
+import useScrollTitle from "../hooks/useScrollTitle";
 
 function Contacts() {
   const [scrollPercent, setScrollPercent] = useState(0);
+  const [scrollStyle, setScrollStyle] = useState({
+    transform: `translate(${scrollPercent}%)`,
+  });
   const contactsRef = useRef(null);
+
+  useScrollTitle(scrollStyle, setScrollStyle, scrollPercent);
 
   useEffect(() => {
     window.addEventListener("scroll", (event) =>
@@ -16,10 +24,7 @@ function Contacts() {
   }, [scrollPercent]);
   return (
     <div className="contacts" ref={contactsRef}>
-      <div
-        className="contacts__title"
-        style={{ transform: `translate(${scrollPercent}%)` }}
-      >
+      <div className="contacts__title" style={scrollStyle}>
         CONTACTS
       </div>
       <div className="contacts__description">

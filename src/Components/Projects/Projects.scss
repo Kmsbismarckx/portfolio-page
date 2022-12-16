@@ -11,6 +11,10 @@
     height: 100vh;
     margin-bottom: 200px;
     color: white;
+    @media screen and (max-width: $tablet) {
+      flex-flow: column nowrap;
+      height: 100%;
+    }
     .projects__item-img-wrapper {
       width: 100%;
       height: 100%;
@@ -21,10 +25,18 @@
     }
     &-img {
       width: 100%;
+      will-change: auto;
     }
   }
   .swiper-project {
+    width: 50%;
     margin-right: 0;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      height: 100vh;
+      margin-top: 100vh;
+      padding-top: 300px;
+    }
   }
   .mandatory-scroll-snapping {
     scroll-snap-align: end;
