@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "AvenirLight";
+  src: url("../fonts/Avenir/Avenir-Light-07.ttf");
+}
+@font-face {
+  font-family: "AvenirRoman";
+  src: url("../fonts/Avenir/Avenir-Roman-12.ttf");
+}
+@font-face {
+  font-family: "AvenirBook";
+  src: url("../fonts/Avenir/Avenir-Book-01.ttf");
+}
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/Avenir/Avenir-Medium-09.ttf");
+}
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("../fonts/Avenir/Avenir-Heavy-05.ttf");
+}
+@font-face {
+  font-family: "Valencia";
+  src: url("../fonts/Valencia/Valencia.ttf");
+}
+.introduction {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .introduction {
+    height: 50vh;
+  }
+}
+.introduction__item {
+  position: relative;
+  z-index: 1;
+}
+.introduction .hide {
+  background-color: white;
+  overflow-y: clip;
+}
+.introduction .hide span {
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .introduction .hide span {
+    transform: translateY(100%);
+  }
+}
+.introduction__name {
+  font-family: "Valencia", serif;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .introduction__name {
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .introduction__name {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .introduction__name {
+    font-size: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .introduction__name {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduction__name {
+    font-size: 140px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .introduction__name {
+    font-size: 150px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .introduction__name {
+    font-size: 200px;
+  }
+}
+.introduction__info {
+  font-family: "Avenir", "Helvetica", "Ariel", sans-serif;
+}
+@media screen and (min-width: 320px) {
+  .introduction__info {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .introduction__info {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .introduction__info {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .introduction__info {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduction__info {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .introduction__info {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .introduction__info {
+    font-size: 60px;
+  }
+}
+
+/*# sourceMappingURL=Introduction.css.map */
