@@ -172,7 +172,6 @@
 
 .block-text-reveal {
   color: transparent;
-  animation: appearText 100ms linear forwards;
   pointer-events: none;
 }
 
@@ -185,16 +184,14 @@
 
 .block-text-reveal_appear::after {
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
   width: 0;
   height: 100%;
   background: #222;
-  animation: revBlock 1s cubic-bezier(0.19, 1, 0.22, 1);
-  will-change: left;
-  animation-delay: 0s;
-  box-sizing: content-box;
+  animation: revBlock 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: auto;
 }
 
 @keyframes appearText {
