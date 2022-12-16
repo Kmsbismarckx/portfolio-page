@@ -19,6 +19,11 @@
       width: 100%;
       height: 100%;
       overflow-y: scroll;
+      @media screen and (max-width: $tablet) {
+        flex-flow: column nowrap;
+        height: 100%;
+        overflow-y: hidden;
+      }
     }
     .projects__item-img-wrapper::-webkit-scrollbar {
       width: 5px;
