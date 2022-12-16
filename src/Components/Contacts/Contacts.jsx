@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { isMobile } from "react-device-detect";
 import scrollXHandler from "../../helpers/scrollXHandler";
 import "./Contacts.scss";
-import useScrollTitle from "../hooks/useScrollTitle";
+import useScrollTitle from "../../hooks/useScrollTitle";
 
 function Contacts() {
   const [scrollPercent, setScrollPercent] = useState(0);

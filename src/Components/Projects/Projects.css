@@ -43,10 +43,10 @@
 .projects__item .projects__item-img-wrapper {
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .projects__item .projects__item-img-wrapper::-webkit-scrollbar {
-  display: none;
+  width: 5px;
 }
 .projects__item-img {
   width: 100%;

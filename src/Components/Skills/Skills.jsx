@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Skills.scss";
 import scrollXHandler from "../../helpers/scrollXHandler";
-import useScrollTitle from "../hooks/useScrollTitle";
+import useScrollTitle from "../../hooks/useScrollTitle";
 
 function Skills() {
   const [scrollPercent, setScrollPercent] = useState(0);
