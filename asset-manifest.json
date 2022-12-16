@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.72ec2586.css",
+    "main.css": "/portfolio-page/static/css/main.59d28d10.css",
     "main.js": "/portfolio-page/static/js/main.a43c787d.js",
     "static/media/Avenir-Book-01.ttf": "/portfolio-page/static/media/Avenir-Book-01.ab7aa26986df653dedc1.ttf",
     "static/media/Avenir-Medium-09.ttf": "/portfolio-page/static/media/Avenir-Medium-09.90ba4d31a83ca40b27d8.ttf",
@@ -9,11 +9,11 @@
     "static/media/Avenir-Light-07.ttf": "/portfolio-page/static/media/Avenir-Light-07.d7d158a298aa946d69ad.ttf",
     "static/media/Valencia.ttf": "/portfolio-page/static/media/Valencia.982aa30178d00befd6f0.ttf",
     "index.html": "/portfolio-page/index.html",
-    "main.72ec2586.css.map": "/portfolio-page/static/css/main.72ec2586.css.map",
+    "main.59d28d10.css.map": "/portfolio-page/static/css/main.59d28d10.css.map",
     "main.a43c787d.js.map": "/portfolio-page/static/js/main.a43c787d.js.map"
   },
   "entrypoints": [
-    "static/css/main.72ec2586.css",
+    "static/css/main.59d28d10.css",
     "static/js/main.a43c787d.js"
   ]
 }
