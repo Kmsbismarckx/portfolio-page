@@ -2,6 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Lazy, Pagination } from "swiper";
+import { isMobile } from "react-device-detect";
 import TextContent from "../TextContent/TextContent";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,7 +11,7 @@ import "swiper/css/scrollbar";
 
 function ProjectItem({ project }) {
   const { ref: ProjectItemRef, inView } = useInView({
-    threshold: [0.5],
+    threshold: isMobile ? 0.1 : 0.55,
   });
 
   return (

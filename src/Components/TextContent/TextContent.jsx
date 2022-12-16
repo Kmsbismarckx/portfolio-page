@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import "./TextContent.scss";
 
 function TextContent({ projectItem, inView }) {
@@ -15,7 +15,9 @@ function TextContent({ projectItem, inView }) {
   return (
     <div
       className="text-container"
-      style={{ display: `${inView ? "flex" : "none"}` }}
+      style={{
+        display: `${inView ? "flex" : "none"}`,
+      }}
     >
       <div className="project-id">
         <span

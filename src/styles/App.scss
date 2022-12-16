@@ -14,7 +14,9 @@ a {
 
 .swiper.swiper-project {
   height: 100%;
-  padding-top: 5%;
+  .swiper-wrapper {
+    //margin-top: 400px;
+  }
   .swiper-project__slide {
     padding: 0 5% 5%;
 

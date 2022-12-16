@@ -8,20 +8,18 @@
   &__item {
     display: flex;
     flex-flow: row nowrap;
-    height: 100vh;
-    margin-bottom: 200px;
     color: white;
+    margin-bottom: 200px;
     @media screen and (max-width: $tablet) {
       flex-flow: column nowrap;
       height: 100%;
+      margin-top: 100vh;
     }
     .projects__item-img-wrapper {
       width: 100%;
       height: 100%;
       overflow-y: scroll;
       @media screen and (max-width: $tablet) {
-        flex-flow: column nowrap;
-        height: 100%;
         overflow-y: hidden;
       }
     }
@@ -36,11 +34,10 @@
   .swiper-project {
     width: 50%;
     margin-right: 0;
+    height: 100vh;
     @media screen and (max-width: $tablet) {
       width: 100%;
-      height: 100vh;
       margin-top: 100vh;
-      padding-top: 300px;
     }
   }
   .mandatory-scroll-snapping {
