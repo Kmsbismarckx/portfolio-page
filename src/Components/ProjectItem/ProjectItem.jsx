@@ -1,8 +1,6 @@
-import React from "react";
-import { useInView } from "react-intersection-observer";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Lazy, Pagination } from "swiper";
-import { isMobile } from "react-device-detect";
 import TextContent from "../TextContent/TextContent";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,15 +8,38 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function ProjectItem({ project }) {
-  const { ref: ProjectItemRef, inView } = useInView({
-    threshold: isMobile ? 0.1 : 0.55,
-  });
+  const [inView, setInView] = useState(false);
+  const projectsItemsRef = useRef(null);
+
+  const scrollHandler = (event, ref, rootMargin) => {
+    const { top: projectsItemTop, bottom: projectsItemBottom } =
+      ref.current.getBoundingClientRect();
+    const { clientHeight } = event.srcElement.documentElement;
+    if (projectsItemTop <= clientHeight - rootMargin) {
+      setInView(true);
+    }
+    if (
+      projectsItemBottom <= clientHeight - rootMargin ||
+      projectsItemTop >= clientHeight - rootMargin
+    ) {
+      setInView(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", (event) =>
+      scrollHandler(event, projectsItemsRef, 500)
+    );
+    return window.removeEventListener("scroll", (event) =>
+      scrollHandler(event, projectsItemsRef, 500)
+    );
+  }, []);
 
   return (
     <div
       className="projects__item mandatory-scroll-snapping"
       key={project.id}
-      ref={ProjectItemRef}
+      ref={projectsItemsRef}
     >
       <TextContent projectItem={project} inView={inView} />
 
