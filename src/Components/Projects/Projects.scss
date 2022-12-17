@@ -32,11 +32,11 @@
   .swiper-project {
     width: 50%;
     margin-right: 0;
-    height: 100vh;
+    height: 85vh;
     @media screen and (max-width: $tablet) {
       width: 100%;
       margin-top: 100vh;
-      height: 90vh;
+      height: 85vh;
     }
   }
   .mandatory-scroll-snapping {
