@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "projectName": "MIROCO",
+    "projectDesc": "Платформа для закупок на основе тендерной системы",
+    "projectType": "NEXT приложение",
+    "roles": ["Frontend"],
+    "siteUrl": "http://platform.miroco.ru/",
+    "imgUrls": ["miroko1", "miroko2", "miroko3"]
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "projectName": "Feplex",
+    "projectDesc": "Коммерческий проект с адаптивной версткой на React, с использованием React-redux, React-swiper. Работа с градиентами и легкими анимациями",
+    "projectType": "React приложение",
+    "roles": ["Frontend"],
+    "siteUrl": "https://kmsbismarckx.github.io/feplex/",
+    "codeUrl": "https://github.com/Kmsbismarckx/feplex",
+    "imgUrls": ["feplex-2", "feplex-3", "feplex-4", "feplex-1"]
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "projectName": "Azur Lane",
+    "projectDesc": "Небольшая база данных по игре Azur Lane. Здесь реализованы механизмы сортировки и поиска, так же используется react-router для навигации по приложению.",
+    "projectType": "React приложение",
+    "roles": ["Frontend"],
+    "siteUrl": "",
+    "codeUrl": "https://github.com/Kmsbismarckx/azur-lane",
+    "imgUrls": ["azur-lane"]
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "projectName": "Minesweeper",
+    "projectDesc": "Игра Сапёр, на чистом JS, реализован жадный алгоритм",
+    "projectType": "JavaScript игра",
+    "roles": ["Frontend"],
+    "siteUrl": "https://kmsbismarckx.github.io/minesweeper/",
+    "codeUrl": "https://github.com/Kmsbismarckx/minesweeper",
+    "imgUrls": ["minesweeper"]
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "projectName": "Romsem",
+    "projectDesc": "React приложение, созданное с использованием Redux-toolkit, React, Scss",
+    "projectType": "React приложение",
+    "roles": ["Frontend"],
+    "siteUrl": "https://kmsbismarckx.github.io/romsem/",
+    "codeUrl": "https://github.com/Kmsbismarckx/romsem",
+    "imgUrls": ["romsem-1", "romsem-2", "romsem-3", "romsem-4"]
+  },
+  {
+    "id": 6,
+    "number": "01",
+    "projectName": "META",
+    "projectDesc": "HTML страничка, сверстана адаптивно, с использоввнием SCSS, так же присутствует немного JS кода, для взаимодействия с интерфейсом",
+    "projectType": "HTML-page",
+    "roles": ["Frontend"],
+    "siteUrl": "https://kmsbismarckx.github.io/pet-project-meta/",
+    "codeUrl": "https://github.com/Kmsbismarckx/pet-project-meta",
+    "imgUrls": ["pet-project-meta"]
+  }
+]

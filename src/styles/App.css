@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "AvenirLight";
+  src: url("../fonts/Avenir/Avenir-Light-07.ttf");
+}
+@font-face {
+  font-family: "AvenirRoman";
+  src: url("../fonts/Avenir/Avenir-Roman-12.ttf");
+}
+@font-face {
+  font-family: "AvenirBook";
+  src: url("../fonts/Avenir/Avenir-Book-01.ttf");
+}
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/Avenir/Avenir-Medium-09.ttf");
+}
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("../fonts/Avenir/Avenir-Heavy-05.ttf");
+}
+@font-face {
+  font-family: "Valencia";
+  src: url("../fonts/Valencia/Valencia.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.swiper.swiper-project {
+  height: 100%;
+}
+.swiper.swiper-project .swiper-project__slide {
+  padding: 0 5% 0;
+}
+@media screen and (max-width: 768px) {
+  .swiper.swiper-project .swiper-project__slide {
+    padding-bottom: 10%;
+  }
+}
+.swiper.swiper-project .swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+}
+
+/*# sourceMappingURL=App.css.map */

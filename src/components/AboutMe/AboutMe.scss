@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.about {
+  height: 50vh;
+  width: 100%;
+  padding-top: 5%;
+  position: relative;
+  overflow: hidden;
+
+  &__description {
+    align-items: center;
+	  text-align: center;
+    @media screen and (min-width: $laptop) {
+		text-align: left;
+      margin-left: 30%;
+      margin-right: 5%;
+    }
+  }
+}

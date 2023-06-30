@@ -1,0 +1,84 @@
+@import "../styles/variables.scss";
+
+.home {
+  height: 100%;
+}
+
+.about__title,
+.skills__title,
+.contacts__title {
+  position: absolute;
+  top: 5%;
+  left: -100%;
+  width: 100%;
+
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+
+  font-family: "AvenirHeavy", sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  z-index: -1;
+  @media screen and (min-width: $mobileS) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: $mobileM) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: $mobileL) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 90px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 180px;
+    color: #eee;
+  }
+  @media screen and (min-width: $laptopL) {
+    font-size: 200px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 350px;
+  }
+}
+.skills__title,
+.contacts__title {
+  @media screen and (max-width: $tablet) {
+    position: initial;
+  }
+}
+.skills {
+  position: relative;
+  padding-top: 15%;
+  overflow: hidden;
+}
+.about__description,
+.skills__description {
+  font-family: "AvenirLight", sans-serif;
+  @media screen and (min-width: $mobileS) {
+    padding: 30px;
+    font-size: 20px;
+  }
+  @media screen and (min-width: $mobileM) {
+    padding: 30px;
+    font-size: 23px;
+  }
+  @media screen and (min-width: $mobileL) {
+    padding: 30px;
+    font-size: 24px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 80px;
+    font-size: 30px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: $laptopL) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 70px;
+  }
+}

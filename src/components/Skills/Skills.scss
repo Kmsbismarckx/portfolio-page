@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.skills__title {
+  @media screen and (max-width: $tablet) {
+    margin-top: 60vh;
+    left: 0;
+  }
+}
+
+.skills__description {
+  display: grid;
+  padding-top: 10%;
+  grid-template-columns: repeat(2, auto);
+  font-weight: 300;
+  min-height: 100vh;
+  @media screen and (max-width: $tablet) {
+    min-height: 50vh;
+  }
+  .skills__item {
+    font-family: AvenirRoman, sans-serif;
+    justify-self: center;
+    @media screen and (min-width: $mobileS) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: $mobileM) {
+      font-size: 23px;
+    }
+    @media screen and (min-width: $mobileL) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 35px;
+    }
+    @media screen and (min-width: $laptopL) {
+      font-size: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 70px;
+    }
+  }
+}

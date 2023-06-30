@@ -1,0 +1,159 @@
+@import "../../styles/variables";
+
+.text-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: display 0.5s ease-out;
+  flex-flow: column nowrap;
+  width: 50%;
+  height: 100vh;
+  z-index: 1;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}
+.project-name {
+  font-family: "AvenirHeavy", sans-serif;
+  z-index: -1;
+  font-size: 70px;
+  @media screen and (min-width: $mobileS) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: $mobileM) {
+    font-size: 45px;
+  }
+  @media screen and (min-width: $mobileL) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 70px;
+  }
+  @media screen and (min-width: $laptopL) {
+    font-size: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 120px;
+  }
+}
+.project-description,
+.my-role,
+.project-id,
+.project-type,
+.project-link {
+  font-size: 25px;
+  @media screen and (min-width: $laptop) {
+    font-size: 25px;
+  }
+  @media screen and (min-width: $laptopL) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+  }
+}
+.project-description {
+  padding-top: 2%;
+  font-family: "AvenirBook", sans-serif;
+  flex-grow: 1;
+}
+.my-role {
+  padding-top: 5%;
+  font-family: "AvenirMedium", sans-serif;
+}
+
+.project-id {
+  font-family: "AvenirHeavy", sans-serif;
+  padding: 5%;
+}
+.project-type {
+  font-family: "AvenirHeavy", sans-serif;
+  padding: 5%;
+}
+.project-details-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+}
+.project-details {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  padding: 5% 5% 5% 10%;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  .project-link {
+    display: inline-block;
+    height: 100%;
+    padding: 0 25px;
+    font-family: "AvenirBook", sans-serif;
+    transition: all 0.15s ease-out;
+
+    border: 3px solid transparent;
+    cursor: pointer;
+  }
+  .project-link:hover {
+    transform: translate(0px, -5px) scale(1.05);
+    box-shadow: 0 5px 5px #ccc;
+    border-color: black;
+  }
+}
+
+.block-text-reveal {
+  color: transparent;
+  pointer-events: none;
+}
+
+.block-text-reveal_appear {
+  animation: appearText 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 0.5s;
+  position: relative;
+  pointer-events: all;
+}
+.block-text-reveal_appear::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #222;
+  @media screen and (min-width: $tablet) {
+    animation: revBlock 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  will-change: auto;
+}
+
+@keyframes appearText {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes revBlock {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
